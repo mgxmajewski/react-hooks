@@ -1,23 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
-class App extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            score: 0
-        }
-    }
-
-    render() {
-        return (
-            <div className="App">
-                <header className="App-header">
-                    <h1>Welcome!</h1>
-                </header>
-            </div>
-        );
-    }
+function App() {
+    const [ score, setScore ] = useState(0);
+  return (
+    <div className="App">
+      <header className="App-header">
+        <h1>Welcome!</h1>
+      </header>
+    </div>
+  );
 }
 
 export default App;
